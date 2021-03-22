@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		500C3ABC26083DAA007E6A9B /* ButtonChangeDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500C3ABB26083DAA007E6A9B /* ButtonChangeDayView.swift */; };
+		500C3AC1260844CE007E6A9B /* DayWeatherWeekModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500C3AC0260844CE007E6A9B /* DayWeatherWeekModel.swift */; };
 		50333EC825F5152500649CAC /* SwiftUITestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50333EB525F5152400649CAC /* SwiftUITestApp.swift */; };
 		50333EC925F5152500649CAC /* SwiftUITestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50333EB525F5152400649CAC /* SwiftUITestApp.swift */; };
 		50333ECA25F5152500649CAC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50333EB625F5152400649CAC /* ContentView.swift */; };
 		50333ECB25F5152500649CAC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50333EB625F5152400649CAC /* ContentView.swift */; };
 		50333ECC25F5152500649CAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50333EB725F5152500649CAC /* Assets.xcassets */; };
 		50333ECD25F5152500649CAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50333EB725F5152500649CAC /* Assets.xcassets */; };
+		50E5418525FF4D700040B3C9 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E5418425FF4D700040B3C9 /* Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		500C3ABB26083DAA007E6A9B /* ButtonChangeDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonChangeDayView.swift; sourceTree = "<group>"; };
+		500C3AC0260844CE007E6A9B /* DayWeatherWeekModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayWeatherWeekModel.swift; sourceTree = "<group>"; };
 		50333EB525F5152400649CAC /* SwiftUITestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUITestApp.swift; sourceTree = "<group>"; };
 		50333EB625F5152400649CAC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		50333EB725F5152500649CAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		50333EC425F5152500649CAC /* SwiftUITest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUITest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50333EC625F5152500649CAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50333EC725F5152500649CAC /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		50E5418425FF4D700040B3C9 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +50,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		500C3AB826083D91007E6A9B /* CommonView */ = {
+			isa = PBXGroup;
+			children = (
+				500C3ABB26083DAA007E6A9B /* ButtonChangeDayView.swift */,
+			);
+			path = CommonView;
+			sourceTree = "<group>";
+		};
+		500C3ABF260844B3007E6A9B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				500C3AC0260844CE007E6A9B /* DayWeatherWeekModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		50333EAF25F5152400649CAC = {
 			isa = PBXGroup;
 			children = (
@@ -57,6 +79,9 @@
 		50333EB425F5152400649CAC /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				500C3ABF260844B3007E6A9B /* Model */,
+				500C3AB826083D91007E6A9B /* CommonView */,
+				50E5418325FF4D550040B3C9 /* Helper */,
 				50333EB525F5152400649CAC /* SwiftUITestApp.swift */,
 				50333EB625F5152400649CAC /* ContentView.swift */,
 				50333EB725F5152500649CAC /* Assets.xcassets */,
@@ -88,6 +113,14 @@
 				50333EC725F5152500649CAC /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		50E5418325FF4D550040B3C9 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				50E5418425FF4D700040B3C9 /* Helper.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +222,9 @@
 			files = (
 				50333ECA25F5152500649CAC /* ContentView.swift in Sources */,
 				50333EC825F5152500649CAC /* SwiftUITestApp.swift in Sources */,
+				50E5418525FF4D700040B3C9 /* Helper.swift in Sources */,
+				500C3AC1260844CE007E6A9B /* DayWeatherWeekModel.swift in Sources */,
+				500C3ABC26083DAA007E6A9B /* ButtonChangeDayView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
